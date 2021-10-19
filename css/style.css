@@ -1,0 +1,297 @@
+@charset "utf-8";
+body {
+  position: relative;
+}
+.side {
+  position: absolute;
+  top: 49.1%;
+  left: 50.3%;
+  transform: translate(-50.1%, 49.1%);
+  width: 305px;
+  height: 305px;
+  padding: 10px;
+  background-color: rgb(113, 112, 112);
+  border-radius: 10px;
+  z-index: 0;
+}
+.wrap {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: rgb(152, 152, 152);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+/* .wrap::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 305px;
+  height: 305px;
+  padding: 10px;
+  background-color: rgb(113, 112, 112);
+  border-radius: 10px;
+  z-index: 10;
+} */
+.screen {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.writeZorn {
+  border: unset;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: right;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  animation-name: character;
+  animation-duration: 0.9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes character {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: rgb(49, 48, 48);
+  }
+}
+/* .writeZorn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 70%;
+  animation-name: load;
+  animation-duration: 0.9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+} */
+/* @keyframes load {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #ddd;
+  }
+} */
+/* .hover {
+  animation-name: hover;
+  animation-duration: 0.05s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+} */
+/* @keyframes hover {
+  0% {
+    border: 1px solid cadetblue;
+  }
+  100% {
+    border: 1px solid rgb(46, 88, 90);
+  }
+} */
+.wrapper {
+  font-size: 0;
+  display: flex;
+  height: 230px;
+  justify-content: space-between;
+}
+.left_side {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ori {
+  width: calc(100% / 3.5);
+  height: 50px;
+  background-color: cadetblue;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+  border-radius: 10%;
+  border: 2px solid rgb(46, 88, 90);
+  border-top: unset;
+  border-left: unset;
+}
+.fst::after {
+  position: absolute;
+  content: "1";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sec::after {
+  position: absolute;
+  content: "2";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.thi::after {
+  position: absolute;
+  content: "3";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fou::after {
+  position: absolute;
+  content: "4";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fif::after {
+  position: absolute;
+  content: "5";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.six::after {
+  position: absolute;
+  content: "6";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sev::after {
+  position: absolute;
+  content: "7";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eig::after {
+  position: absolute;
+  content: "8";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nin::after {
+  position: absolute;
+  content: "9";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.zer::after {
+  position: absolute;
+  content: "0";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.zer2::after {
+  position: absolute;
+  content: "00";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dot::after {
+  position: absolute;
+  content: "・";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.right_side {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ori2 {
+  position: relative;
+  width: 100%;
+  height: calc(100% / 8);
+  background-color: cadetblue;
+  border-radius: 10px;
+  border: 2px solid rgb(46, 88, 90);
+  border-top: unset;
+  border-left: unset;
+}
+.pls::after {
+  position: absolute;
+  content: "+";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pul::after {
+  position: absolute;
+  content: "-";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mul::after {
+  position: absolute;
+  content: "×";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.div::after {
+  position: absolute;
+  content: "÷";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.equ::after {
+  position: absolute;
+  content: "=";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cle::after {
+  position: absolute;
+  content: "c";
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ori:active {
+  border: 1px solid rgb(46, 88, 90);
+}
+.ori2:active {
+  border: 1px solid rgb(46, 88, 90);
+}
